@@ -1,0 +1,72 @@
+--DATABASE name:  advistalk
+
+
+CREATE TABLE advertisement
+(
+	adID int,			
+	category varchar(15),	
+	subCategory	varchar(20),	
+	type varchar(20),	
+	title varchar(50),	
+	description	varchar(300),	
+	price real,			
+	name varchar(30),	
+	email varchar(30),	
+	phone1 varchar(15),	
+	phone2 varchar(15),	
+	province varchar(15),	
+	firstUsername varchar(20),
+	CONSTRAINT ad_pk PRIMARY KEY (adID)
+);
+
+
+CREATE TABLE reviews(
+	ID int,	
+	firstName varchar(20),	
+	lastName varchar(20),	
+	description	varchar(200),
+	CONSTRAINT reviews_pk PRIMARY KEY (ID)
+);
+
+
+CREATE TABLE userprofile(
+	userID int,
+	firstName varchar(30),	
+	lastName varchar(30),	
+	street1	varchar(30),	
+	street2	varchar(30),	
+	city varchar(30),	
+	province varchar(30),
+	postalCode int,
+	country	varchar(25),	
+	areaCode char(3),	
+	phoneNumber	varchar(15),	
+	userName varchar(30),	
+	password varchar(30),
+	CONSTRAINT userprofile_pk PRIMARY KEY (userID)
+);
+
+CREATE TABLE transactions(
+	transactionID int,
+    firtName VARCHAR(35),
+    lastName VARCHAR(35),
+    cardNumber CHAR(16),
+    cvv CHAR(3),
+    bankAcc VARCHAR(20),
+    validTill CHAR(10),
+    CONSTRAINT transaction_pk PRIMARY KEY(transactionID)
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+

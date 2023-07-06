@@ -1,0 +1,1163 @@
+
+body{
+	margin: 0px;
+	padding: 0px;
+	background-color: #d1cdd1;
+}
+
+/*HOME PAGE STYLING ------------------------------------------------------------------------------------------------------- */
+
+.frame{
+	overflow: hidden;
+	height: 200px;
+	width: 100%;
+}
+
+@-webkit-keyframes slide-animation{
+
+	0% {left: 0px;}
+	10%{left: 0px;}
+	20%{left: 100%;}
+	30%{left: 100%;}
+	40%{left: 200%;}
+	50%{left: 200%;}
+	60%{left: 100%;}
+	70%{left: 100%;}
+	80%{left: 0px;}
+	90%{left: 0px;}
+	100%{left: 0px;}
+}
+
+.hero{
+	width: 300%; 
+	height: 200px;
+	margin: 0 0 0 -200%;
+	position: relative;
+	overflow: hidden;
+	-webkit-animation-name: slide-animation;
+	-webkit-animation-duration: 10s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-play-state: running; 
+}
+
+.img-container{
+	height: 200px;
+	width: 33.33%;
+	position: relative;
+	float: left;
+	object-fit: cover;
+}
+
+
+.header{
+	background-color: #252b27;
+	width: 100%;
+	padding-bottom: 1%;
+}
+
+.mainSearchBar{
+	margin-top: 5%;
+	margin-left: 5%;
+	outline: none;
+	border: 1px solid transparent;
+	border-radius: 10px;
+	padding: 10px;
+	padding-left: 25px;
+	width: 20%;
+}
+
+.secondarySearchBar{
+	margin-top: 5%;
+	margin-left: 5%;
+	outline: none;
+	border: 1px solid transparent;
+	padding: 10px;
+	padding-left: 25px;
+	width: 20%;
+}
+
+.searchButton{
+	background-color: transparent;
+	color: white;
+	cursor: pointer;
+	border: 3px solid darkorange;
+	border-radius: 10px;
+	width: 10%;
+	padding: 8px;
+	transition: background-color;
+	transition-duration: 0.5s;
+}
+
+.searchButton:hover{
+	background-color: darkorange;
+}
+
+.transparentName{
+	display: inline;
+	background: url("../images/footer.jpg") no-repeat;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-family: arial;
+    font-size: 500%;
+    font-weight: bold;
+    letter-spacing: 10px;
+   	margin-left: 20%;
+}
+
+#advista{
+	margin-left: 30%;
+	color: white;
+	background-color: black;
+	padding: 8px 16px;
+	font-size: 200%;
+	font-weight: bold;
+}
+
+#lk{
+	background-color: orange;
+	color: white;
+	padding: 8px 16px;
+	margin-right: 3%;
+	font-size: 200%;
+	font-weight: bold;
+}
+
+
+.secondLine{
+	letter-spacing: 20px;
+	color: white;
+}
+
+.orangeLine{
+	background-color: darkorange;
+	padding: 2px;
+	width: 100%;
+}
+
+.bodyDiv{
+	background-color: white;
+	padding-bottom: 5%;
+	padding-top: 4%;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0.5%;
+	margin-bottom: 0.5%;
+	box-shadow: 0px 0px 10px 0.1px black;
+}
+
+.loginAndPostAd{
+	padding: 15px 20px;
+	background-color: orange;
+	margin-left: 2%;
+	margin-bottom: 5%;
+	cursor: pointer;
+}
+
+.loginAndPostAd:hover{
+	box-shadow: 2px 2px 5px 2px #888888;
+}
+
+.homePageTwoButtons, .websiteLogo{
+	text-decoration: none;
+	color: black;
+}
+
+.categories{
+	width: 100%;
+}
+
+.categoryRow{
+	width: 100%;
+	margin-bottom: 3%;
+	padding-bottom: 15%;
+}
+
+.categoryCards{
+	float: left;
+	width: 30%;
+	padding-bottom: 10%;
+	margin-top: 2%;
+	margin-left: 2.2%;
+	box-shadow: 5px 5px 15px black;
+	transition: 0.5s ease;
+	cursor: pointer;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.categoryCards:hover{
+	transform: scale(1.1);
+}
+
+.categoryImages{
+	width: 100%;
+	height: 90%;
+	object-fit: cover;
+}
+
+.categoryName{
+	background-color: #252b27;
+	color: white;
+	padding: 8px;
+	font-size: 110%;
+	margin-bottom: 0px;
+}
+
+/* VIEWING ADS PAGE STYLING -------------------------------------------------------------------------------------------------*/
+
+.postButton{
+	background-color: transparent;
+	color: white;
+	padding: 8px 16px;
+	border: 3px solid darkorange;
+	border-radius: 10px;
+	cursor: pointer;
+	margin-right: 5%;
+	width: 10%;
+	transition: background-color;
+	transition-duration: 0.5s;
+}
+
+.postButton:hover{
+	background-color: darkorange;
+}
+
+#sorting-buttonSet{
+	margin-left: 65%;
+	margin-bottom: 2%;
+}
+
+#sorting-buttonSet button{
+	margin-right: 2%;
+	padding: 8px 16px;
+	background-color: transparent;
+	color: black;
+	font-weight: bold;
+	outline: none;
+	border: 2px solid white;
+	cursor: pointer;
+	transition: border-bottom;
+	transition-duration: 0.5s;
+}
+
+#sorting-buttonSet button:hover{
+	border-bottom: 2px solid orange;
+}
+
+.dropDownBtn{
+	width: 100%;
+}
+
+.dropDown{
+	position: relative;
+	display: inline-block;
+}
+
+.dropDownContent{
+	display: none;
+	position: absolute;
+	width: 70%;
+	margin-top: 1.5%;
+	box-shadow: 2px 2px 13px 1px grey;
+}
+
+.dropA{
+	display: block;
+	padding: 8px 16px;
+	width: 100%;
+	text-decoration: none;
+	color: white;
+	background-color: #292727;
+	cursor: pointer;
+	text-align: center;
+}
+
+.dropA:hover{
+	background-color: black;
+}
+
+.dropDown:hover .dropDownContent{
+	display: block;
+}
+
+.ads{
+	overflow: hidden;
+	border: 1px solid #ac04c9;
+	border-radius: 20px;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 2%;
+	box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.7);
+	transition: 0.5s ease;
+}
+
+.ads:hover{
+	transform: scale(1.01);
+}
+
+.ad-title, .ad-type{
+	background-color: #252b27;
+	color: white;
+	font-size: 110%;
+	letter-spacing: 4px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 8px 16px;
+	padding-left: 5%;
+	overflow: hidden;
+}
+
+.ad-title{
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+.ad-image{
+	padding-bottom: 26.5%;
+	width: 30%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: 1px solid darkorange;
+	margin: 3%;
+	float: left;
+	position: relative;
+}
+.ad-span{
+	width: 30%;
+	padding-top: 8%;
+	padding-bottom: 8%;
+	padding: 10px 18px;
+	float: left;
+	position: relative;
+}
+
+.ad-owner{
+	margin-top: 10%;
+	font-size: 200%;
+}
+
+.ad-details{
+	font-size: 105%;
+}
+.ad-description{
+	font-size: 110%;
+	padding: 8px 16px;
+	margin: 3%;
+	margin-bottom: 0px;
+	float: left;
+	width: 50%;
+}
+.ad-price{
+	background-color: #252b27;
+	color: white;
+	padding: 8px 16px;
+	padding-left: 5%;
+	margin-left: 5%;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	float: right;
+	width: 96.7%;
+	border: 3px solid orange;
+}
+
+.seeMore{
+	
+	text-decoration: none;
+	font-weight: bold;
+	font-style: italic;
+	text-align: center;
+	padding: 8px 16px;
+	margin-top: 5%;
+	margin-right: 5%;
+	border: 2px solid orange;
+	border-radius: 10px;
+	color: black;
+	width: 40%;
+	transition: background-color;
+	transition-duration: 0.4s;
+}
+
+.seeMore:hover{
+	background-color: orange;
+	box-shadow: 1px 1px 10px 1px grey;
+}
+
+/* FULL ADVERTISMENT DETAILS ------------------------------------------------------------------------------ */
+
+.fullAdDetails{
+	margin-left: 10%;
+}
+
+.imageLine{
+	width: 95%;
+	padding-bottom: 23%;
+	margin-bottom: 2%;
+	margin-top: 3%;
+	padding-top: 3%;
+	padding-left: 1%;
+	background-color: #252b27;
+}
+
+.imagesInLine1{
+	width: 18%;
+	padding-bottom: 20%;
+	float: left;
+	margin-left: 1%;
+	border: 2px solid orange;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.imagesInLine2{
+	width: 20%;
+	padding-bottom: 20%;
+	float: left;
+	margin-left: 20%;
+	border: 2px solid orange;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.adDescription{
+	margin-left: 10%;
+	width: 80%;
+	font-size: 130%;
+}
+
+.adDetails-hr{
+	width: 80%;
+}
+
+/*PAYMENT PAGE STYLLING ------------------------------------------------------------------------------------*/
+
+.inputFields-payment{
+	margin-left: 30%;
+	margin-bottom: 3%;
+	width: 40%;
+	outline: none;
+	padding: 8px 16px;
+	border: 1px solid grey;
+	border-radius: 10px;
+	box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.6);
+}
+
+#payment-optionMenu{
+	width: 43%;
+}
+
+.inputFields-payment:focus{
+	border: 1px solid darkorange;
+}
+
+.inputFields-payment-title{
+	margin-left: 30%;
+	font-weight: bold;
+}
+
+.paymentForm-buttons{
+	padding: 8px 16px;
+	border: 2px solid orange;
+	border-radius: 10px;
+	font-weight: bold;
+	background-color: transparent;
+	width: 10%;
+	cursor: pointer;
+	transition: background-color;
+	transition-duration: 0.5s;
+}
+
+.paymentForm-buttons:hover{
+	background-color: #252b27;
+	color: white;
+}
+
+
+/* FEED BACK PAGE STYLLING ---------------------------------------------*/
+
+#addFeedbackButton, #viewReviews, .submitButtons{
+	outline: none;
+	margin-left: 2%;
+	margin-bottom: 2%;
+	padding: 8px 16px;
+	border: 2px solid orange;
+	border-radius: 10px;
+	background-color: transparent;
+	font-weight: bold;
+	transition: background-color;
+	transition-duration: 0.4s;
+}
+
+#addFeedbackButton:hover, #viewReviews:hover, .submitButtons:hover{
+	background-color: orange;
+	cursor: pointer;
+}
+
+.feedback{
+	width: 90%;
+	margin-left: 2%;
+	padding: 8px 16px;
+	border: 1px solid black;
+	border-radius: 10px;
+	overflow: hidden;
+	margin-bottom: 2%;
+}
+
+.feedback img{
+	height: 30%;
+	width: 20%;
+	border: 1px solid transparent;
+	border-radius: 750px;
+	margin-top: 2%;
+	margin-bottom: 3%;
+	float: left;
+}
+
+.feedback p{
+	width: 70%;
+	margin-left: 5%;
+	margin-top: 2%;
+	float: left;
+	text-align: justify;
+}
+
+.feedbackDoubleQuote{
+	font-weight: bold;
+	font-size: 200%;
+}
+
+
+/* ADD FEED BACK PAGE STYLLING ---------------------------------------------*/
+
+#addFeedbackLegend{
+	width: 95%;
+	margin-left: 2%;
+}
+
+#feedbackDescription{
+	margin-left: 5%;
+	padding: 8px 16px;
+}
+
+#fileToUpload{
+	display: none;
+}
+
+#uploadFeedbackImageButton{
+	cursor: pointer;
+	display: block;
+	background-color: darkorange;
+	color: white;
+	font-weight: bold;
+	border-radius: 10px;
+	padding: 8px 16px;
+	margin-left: 30%;
+	margin-bottom: 5%;
+	width: 40%;
+	transition: background-color;
+	transition-duration: 0.4s;
+	text-align: center;
+}
+
+#uploadFeedbackImageButton:hover{
+	background-color: darkviolet;
+}
+
+/*CONTACT US STYLING --------------------------------------------------*/
+
+.contactUsDiv{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.contactUsColumn1{
+	width: 50%;
+	border-right: 1px solid grey;
+	float: left;
+}
+
+.contactUsTitle{
+	margin-left: 5%;
+
+}
+
+.contactUsTextFields{
+	margin-left: 30%;
+	margin-bottom: 2%;
+	padding: 8px 16px;
+}
+
+.contactUsSubmitButton{
+	outline: none;
+	margin-left: 40%;
+	margin-bottom: 2%;
+	padding: 8px 16px;
+	border: 2px solid orange;
+	border-radius: 10px;
+	background-color: transparent;
+	font-weight: bold;
+	transition: background-color;
+	transition-duration: 0.4s;
+}
+
+.contactUsSubmitButton:hover{
+	background-color: orange;
+}
+
+.contactUsColumn2{
+	margin-left: 50%;
+	width: 50%;
+}
+
+.contactUsDetails{
+	margin-left: 40%;
+	margin-top: 7%;
+}
+
+/*POST AD STYLING -----------------------------------------------------*/
+
+.postAdRow1{
+	width: 100%;
+	height: 20%;
+	border-bottom: 1px solid grey;
+}
+
+.postAdRow2{
+	width: 100%;
+	height: 80%;
+	background-color: blue;
+}
+
+.postAdSelectField{
+	padding: 8px 16px;
+	margin-left: 5%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+.selectFieldsNames{
+	margin-left: 17%;
+}
+
+.postAdCol1, .postAdCol2, .postAdCol3{
+	float: left;
+	width: 33%;
+	height: auto;
+	border-right: 1px solid grey;
+}
+
+
+
+.postAdTextFields{
+	padding: 8px 16px;
+	margin-top: 3%;
+	margin-bottom: 1%;
+	margin-left: 20%;
+}
+
+.postAdTextFields:hover{
+	box-shadow: 1px 1px 10px 1px grey;
+}
+
+.adImgUploads{
+	display: none;
+}
+
+.adImgUploadsLabels{
+	display: block;
+	cursor: pointer;
+	padding: 5px 16px;
+	background-color: orange;
+	width: 50%;
+	margin-left: 20%;
+	margin-top: 1%;
+	border: 1px solid transparent;
+	border-radius: 10px;
+}
+
+.adImgUploadsLabels:hover{
+	box-shadow: 1px 1px 10px 1px grey;
+}
+
+#postAdSubmitButton{
+	outline: none;
+	border: none;
+	background-color: transparent;
+	color: black;
+	font-weight: bold;
+	border: 2px solid orange;
+	border-radius: 10px;
+	margin-left: 40%;
+	transition: background-color;
+	transition-duration: 0.4s;
+}
+
+.postAdtextFieldProvince{
+	margin-left: 20%;
+	margin-top: 3%;
+	margin-bottom: 1%;
+	width: 58%;
+	padding: 8px 16px;
+}
+
+#postAdSubmitButton:hover{
+	background-color: orange;
+	box-shadow: 1px 1px 10px 1px grey;
+}
+
+/* LOGIN PAGE STYLING -------------------------------------------------*/
+
+.loginDiv{
+	background-color: white;
+	width: 30%;
+	margin-top: 1%;
+	margin-left: 35%;
+	margin-bottom: 1%;
+	border: 1px solid transparent;
+	border-radius: 10px;
+	box-shadow: 1px 1px 10px 1px grey;
+}
+
+#loginTitle{
+	padding: 8px 16px;
+	width: 70%;
+	font-weight: bold;
+	font-size: 200%;
+	border: 1px solid orange;
+	border-radius: 10px;
+}
+
+.loginInputFields{
+	padding: 8px 16px;
+	width: 80%;
+	margin-top: 5%;
+}
+
+.loginPageButtons{
+	outline: none;
+	border: none;
+	padding: 8px 16px;
+	width: 40%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	cursor: pointer;
+	text-align: center;
+	border: 2px solid orange;
+	background-color: transparent;
+	border-radius: 10px;
+	transition: background-color;
+	transition-duration: 0.4s;
+}
+
+.loginPageButtons:hover{
+	background-color: orange;
+	box-shadow: 1px 1px 10px 1px grey;
+}
+
+/* REGISTER PAGE HTML -------------------------------------------------*/
+
+#registerPageTitle{
+	font-size: 200%;
+	font-weight: bold;
+	border: 2px solid orange;
+	border-radius: 10px;
+	width: 50%;
+}
+
+.registerPageLabels{
+	font-size: 120%;
+	color: #3d434d;
+	margin-left: 20%;
+}
+
+.registerPageInputFieldsFirstName{
+	margin-left: 13.9%;
+}
+
+.registerPageInputFieldsStreet1{
+	margin-left: 12.4%;
+}
+
+.registerPageInputFieldsStreet2, .registerPageInputFieldsCity, .registerPageInputFieldsPostalCode, .registerPageInputFieldsUserName{
+	margin-left: 38.6%;
+}
+
+.registerPageInputFieldsUserName{
+	margin-left: 11%;
+}
+
+.registerPageInputFieldsPassword{
+	margin-left: 11.4%
+}
+
+.registerPageInputFieldsAreaCode{
+	margin-left: 7.5%;
+}
+
+.registerPageInputFieldsConfirmPW{
+	margin-left: 5%;
+}
+
+.RPTF{
+	padding: 8px 16px;
+	margin-bottom: 1%;
+}
+
+.registerPageButtons{
+	border: none;
+	outline: none;
+	width: 20%;
+	padding: 8px 16px;
+	margin-top: 2%;
+	background-color: transparent;
+	border: 1px solid orange;
+	border-radius: 10px;
+	transition: background-color;
+	transition-duration: 0.4s;
+	cursor: pointer;
+}
+
+.registerPageButtons:hover{
+	background-color: orange;
+	box-shadow: 1px 1px 10px 1px grey;
+}
+
+#registerUserImage{
+	display: none;
+}
+
+#registerImageUpload{
+	display: block;
+	width: 20%;
+	padding: 8px 16px;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	text-align: center;
+	background-color: darkorange;
+	color: white;
+	border: 1px solid transparent;
+	border-radius: 10px;
+}
+
+#registerImageUpload:hover{
+	background-color: darkviolet;
+	box-shadow: 1px 1px 10px 1px grey;
+}
+
+/* USER PROFILE PAGE STYLLING -----------------------------------------*/
+
+.userProfileColumn1{
+	width: 60%;
+	float: left;
+	border-right: 1px solid grey;
+}
+
+.userProfileColumn2{
+	width: 39%;
+	float: left;
+}
+
+.profileInnerDiv1{
+	float: left;
+	width: 35%;
+	margin-left: 10%;
+	border: 1px solid orange;
+	border-radius: 10px;
+}
+
+.profileInnerDiv2{
+	width: 50%;
+	margin-left: 45%;
+	padding-left: 5%;
+	padding-top: 4%;
+	padding-bottom: 4%;
+}
+
+.userImage{
+	width: 200px;
+	height: 200px;
+	border: 1px solid grey;
+	border-radius: 100px;
+	margin-left: 5%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	object-fit: cover;
+}
+
+.userProfileAnchors{
+	width: 50%;
+	margin-bottom: 2%;
+	padding: 8px 16px;
+	text-decoration: none;
+	background-color: transparent;
+	color: black;
+	display: block;
+	border: 1px solid orange;
+	border-radius: 10px;
+	transition: background-color;
+	transition-duration: 0.4s;
+}
+
+.userProfileAnchors:hover{
+	background-color: orange;
+	box-shadow: 1px 1px 10px 1px grey;
+}
+
+.profileInnerRow2{
+	padding: 8px 16px;
+	text-align: justify;
+}
+
+.userProfileValues{
+	font-size: 110%;
+	color: #8c410b;
+	font-weight: bold;
+}
+
+.myAds{
+	display: block;
+	padding: 8px 16px;
+	width: 87%;
+	margin-left: 5%;
+	margin-top: 5%;
+	border-bottom: 1px solid grey;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 20px;
+}
+
+/* ABOUT US PAGE STYLLING ------------------------------------------- */
+
+.aboutUsImageDiv{
+	background-image: url("../images/aboutUs.jpg");
+	background-size: cover;
+	padding-bottom: 40%;
+	margin-top: 0px;
+	overflow: hidden;
+}
+
+.aboutUsImageInnerDiv{
+	background-color: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	width: 80%;
+	height: 66.8%;
+}
+
+.aboutUsLogo{
+	width: 200px;
+	height: 100px;
+	object-fit: cover;
+}
+
+.hrDiv{
+	width: 70%;
+}
+
+.aboutUsCol1, .aboutUsCol2{
+	float: left;
+	width: 50%;
+}
+
+.colTitles{
+	font-weight: bold;
+	font-size: 200%;
+	letter-spacing: 2px;
+	padding: 8px 16px;
+	border-radius: 10px;
+	background-image: linear-gradient(to right, #e6a050 , white);
+	width: 80%;
+}
+
+.colDescription{
+	text-align: justify;
+	width: 70%;
+	margin-left: 15%;
+}
+
+.aboutUsLastRaw{
+	margin-top: 25%;
+	width: 80%;
+	text-align: justify;
+}
+
+/* PRIVACY POLICY PAGE STYLLING -------------------------------------- */
+
+.privacyPolicyMainHead{
+	font-size: 200%;
+	font-family: fantasy;
+	letter-spacing: 2px;
+	padding: 8px 16px;
+	border: 2px solid orange;
+	border-radius: 10px;
+	width: 60%;
+}
+
+.privacyPolicyTitle{
+	font-size: 150%;
+	font-weight: bold;
+	font-style: oblique;
+	margin-left: 8%;
+}
+
+.privacyPolicyDescription{
+	width: 80%;
+	text-align: justify;
+	margin-top: 2%;
+	margin-left: 10%;
+}
+
+/*COMMON FOOTER STYLING -----------------------------------------------*/
+
+.footer{
+	background-image: url("../images/footer.jpg");
+	background-size: cover;
+	padding-bottom: 21.5%;
+	overflow: hidden;
+	width: 100%;
+	bottom: 0;*/
+}
+
+.footerInner{
+	width: 100%;
+	height: 45%;
+	background-color: rgba(0, 0, 0, 0.7);
+	position: absolute;
+}
+
+ul.Navbar{
+	list-style: none;
+	width: 50%;
+	height: 80%;
+	overflow: hidden;
+	float: left;
+	background-color: transparent;
+}
+
+li.Navbar{
+	margin-top: 10%;
+	margin-bottom: 1%;
+}
+
+a.Navbar{
+	text-decoration: none;
+	padding: 8px 16px;
+	color: black;
+	background-color: transparent;
+	color: white;
+	transition: color;
+	transition-duration: 0.5s;
+}
+
+a.Navbar:hover{
+	color: orange;
+}
+
+.options{
+	float: left;
+	margin-top: 1%;
+	margin-left: 50%;
+	width: 10%;
+	height: 80%;
+	padding: 0px;
+	background-color: red;
+}
+
+.faceBook{
+	width: 100%;
+	margin-left: 10%;
+	margin-top: 40%;
+}
+
+.playStore{
+	width: 120%;
+	margin-left: 0px;
+}
+
+.footerName{
+	letter-spacing: 5px;
+	color: white;
+}
+
+.footerRaw1 .footerRaw2{
+	width: 100%;
+}
+
+.footerRaw1{
+	height: 90%;
+	background-color: transparent;
+}
+
+.footerRaw2{
+	padding-bottom: 0.5%;
+	background-color: transparent;
+	color: white;
+	border-top: 1px solid white;
+}
+
+.footerColumn1, .footerColumn2, .footerColumn3, .footerColumn4, .footerColumn5{
+	float: left;
+}
+
+.footerColumn1{
+	background-color: transparent;
+	margin-top: 3%;
+	width: 20%;
+	border-right: 1px solid white;
+}
+.footerColumn2{
+	background-color: transparent;
+	color: white;
+	width: 17%;
+	height: 50%;
+	padding-top: 5%;
+	margin-top: 2%;
+}
+
+.footerColumn3{
+	background-color: transparent;
+	color: white;
+	width: 17%;
+	height: 50%;
+	padding-top: 5%;
+	margin-top: 2%;
+}
+
+.footerColumn4{
+	background-color: transparent;
+	width: 26%;
+}
+
+#creditCardsRow{
+	width: 100%;
+	background-color: transparent;
+	margin-top: 20%;
+}
+
+#creditCardsRow img{
+	width: 100%;
+	height: 50%;
+}
+
+.socialIcons{
+	margin-left: 7%;
+	margin-right: 7%;
+	margin-top: 10%;
+	cursor: pointer;
+}
+
+.footerColumn5{
+	background-color: transparent;
+	margin-top: 5%;
+	width: 19%;
+}
+
+#qrCode{
+	width: 50%;
+	height: 50%;
+}
